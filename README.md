@@ -29,12 +29,14 @@ git push -u origin main
 
 `touch .env`
 
-add your variables
+add your variables (Don't forget to update your database name, as shown in the string below
 
 ```
-DATABASE_URL=mongodb://localhost:27017/testagramV2
-BUCKET_NAME=catcollectorone
-SECRET=mysecretforjwt
+DATABASE_URL=mongodb+srv://jimbojones:W45BfQSBKq9vRKz2@cluster0.ktckmmi.mongodb.net/<your database name>?retryWrites=true&w=majority
+SECRET=SEIrocks!
+aws_access_key_id=yourkeygoeshere
+aws_secret_access_key=yourkeygoeshere
+S3_BUCKET=yourbucknamegoeshere
 ```
 
 The app is configured, to use those respective key names for the database, jwt secret and aws bucket, of course you'll have your own values
